@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #FFF; }
+
+.big-container {
+  background: #684BB1 url("/images/bg-desktop.svg");
+  width: 1440px;
+  height: 800px; }
+
+h1 {
+  font-family: Poppins;
+  color: #FFF;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  font-style: normal; }
+
+/*we can create a mixin for h1*/
+p {
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-size: normal;
+  font-weight: 400;
+  line-height: 27px; }
+
+.main-header {
+  width: 200px;
+  height: 32px; }
+
+/*for the time being*/
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular-webfont.eot");
+  src: url("../fonts/Poppins-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular-webfont.woff") format("woff"), url("../fonts/Poppins-Regular-webfont.ttf") format("truetype"); }
+/*used webfont-snippet.css*/
+
+/*# sourceMappingURL=main.css.map */
