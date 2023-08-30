@@ -3,13 +3,12 @@
 }
 
 body{
-    background-color: #FFF;
-}
-.big-container{
-    background: #684BB1 url('/images/bg-desktop.svg');
+    
+    background: #684BB1 url('/images/bg-desktop.svg') no-repeat center;
     width:1440px;
     height:800px;
 }
+
 h1{ 
     font-family: Poppins;
     color:#FFF;
@@ -26,4 +25,18 @@ p{
     font-size: normal;
     font-weight: 400;
     line-height:27px;
+}
+
+a:link{
+    font-family: Poppins;
+    color:#684BB1;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 27px;
+    
+}
+a:hover{
+    font-family: Poppins;
+    color:#FFFFFF;
+    background-color: #E880E8;
 }
