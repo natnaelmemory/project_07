@@ -1,9 +1,1 @@
-/*for the time being*/
-@font-face{
-font-family: Poppins;
-  src: url('../fonts/Poppins-Regular-webfont.eot');
-  src: url('../fonts/Poppins-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Poppins-Regular-webfont.woff') format('woff'),
-       url('../fonts/Poppins-Regular-webfont.ttf') format('truetype');
-}
-/*used webfont-snippet.css*/
+@include font-face(Poppins, Poppins-regular);

@@ -1,3 +1,4 @@
+/*universalizing the font injector css snippet*/
 * {
   box-sizing: border-box; }
 
@@ -35,6 +36,8 @@ a:hover {
   color: #FFFFFF;
   background-color: #E880E8; }
 
+/*for the time being*/
+/*used webfont-snippet.css*/
 .main-footer {
   display: flex;
   gap: .5rem;
@@ -92,11 +95,9 @@ a:hover {
   padding-left: 64px;
   padding-right: 63px; }
 
-/*for the time being*/
 @font-face {
   font-family: Poppins;
-  src: url("../fonts/Poppins-Regular-webfont.eot");
-  src: url("../fonts/Poppins-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular-webfont.woff") format("woff"), url("../fonts/Poppins-Regular-webfont.ttf") format("truetype"); }
-/*used webfont-snippet.css*/
+  src: url("font-path/Poppins-regular-webfont.eot");
+  src: url("font-path/Poppins-regular-webfont.eot?#iefix") format("embedded-opentype"), url("font-path/Poppins-regular-webfont.woff") format("woff"), url("font-path/Poppins-regular-webfont.ttf") format("truetype"); }
 
 /*# sourceMappingURL=main.css.map */
