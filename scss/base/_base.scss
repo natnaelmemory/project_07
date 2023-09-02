@@ -10,13 +10,8 @@ body{
 }
 
 h1{ 
-    // font-family: Poppins;
-    // color:$secondary-color;
-    // font-size: 40px;
-    // line-height: 60px;
-    // font-weight:600;
-    // font-style:normal;
-    @include text(Poppins,normal,40px,600,60px,$secondary-color);
+    
+    @include text(40px,600,$secondary-color,1.6);
 }
 /*we can create a mixin for h1*/
 p{

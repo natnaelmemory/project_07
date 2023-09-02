@@ -1,5 +1,7 @@
 /*universalizing the font injector css snippet*/
 /*some colors*/
+/*for the time being*/
+/*used webfont-snippet.css*/
 * {
   box-sizing: border-box; }
 
@@ -9,12 +11,10 @@ body {
   height: 800px; }
 
 h1 {
-  font-family: Poppins;
-  color: #FFFFFF;
   font-size: 40px;
-  line-height: 60px;
   font-weight: 600;
-  font-style: normal; }
+  color: #FFFFFF;
+  line-height: 1.6; }
 
 /*we can create a mixin for h1*/
 p {
@@ -37,8 +37,6 @@ a:hover {
   color: #FFFFFF;
   background-color: #E880E8; }
 
-/*for the time being*/
-/*used webfont-snippet.css*/
 .main-footer {
   display: flex;
   gap: .5rem;
