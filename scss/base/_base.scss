@@ -4,14 +4,14 @@
 
 body{
     
-    background: #684BB1 url('/images/bg-desktop.svg') no-repeat center;
+    background: $primary-color url('#{$img-path}/bg-desktop.svg') no-repeat center;
     width:1440px;
     height:800px;
 }
 
 h1{ 
     font-family: Poppins;
-    color:#FFF;
+    color:$secondary-color;
     font-size: 40px;
     line-height: 60px;
     font-weight:600;
@@ -19,7 +19,7 @@ h1{
 }
 /*we can create a mixin for h1*/
 p{
-    color:#FFF;
+    color:$secondary-color;
     font-family: 'Open Sans';
     font-size:18px;
     font-size: normal;
@@ -29,7 +29,7 @@ p{
 
 a:link{
     font-family: Poppins;
-    color:#684BB1;
+    color:$primary-color;
     text-decoration: none;
     font-size: 18px;
     line-height: 27px;
@@ -38,5 +38,5 @@ a:link{
 a:hover{
     font-family: Poppins;
     color:#FFFFFF;
-    background-color: #E880E8;
+    background-color: $link-hover-color;
 }
