@@ -5,22 +5,40 @@
 body{
     
     background: $primary-color url('#{$img-path}/bg-desktop.svg') no-repeat center;
+    background-size: cover;
     width:1440px;
     height:800px;
+
+    @media #{$mobile-width}{
+        background-color: $primary-color url('#{$img-path}/bg-mobile.svg') no-repeat center;
+        width:375px;
+        height:800px;
+    }
+}
+
+.img{
+    width:100%;
 }
 
 h1{ 
-    
-    @include text(40px,600,$secondary-color,1.6);
+    font-family: Poppins;
+    @include text(40px,600,$secondary-color,60px);
+    font-style: normal;
+
+    @media #{$mobile-width}{
+        @include text(24px,600,$secondary-color,36px);
+        text-align: center;
+    }
 }
 /*we can create a mixin for h1*/
 p{
-    color:$secondary-color;
     font-family: 'Open Sans';
-    font-size:18px;
-    font-size: normal;
-    font-weight: 400;
-    line-height:27px;
+    @include text(18px,400,$secondary-color,27px);
+
+    @media #{$mobile-width}{
+        @include text(16px,400,$secondary-color,24px);
+        text-align: center;
+    }
 }
 
 a:link{

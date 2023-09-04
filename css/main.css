@@ -1,29 +1,54 @@
 /*universalizing the font injector css snippet*/
 /*some colors*/
+/*break points..................*/
 /*for the time being*/
 /*used webfont-snippet.css*/
 * {
   box-sizing: border-box; }
 
 body {
-  background: #684BB1 url("../img/bg-desktop.svg") no-repeat center;
+  background: #684BB1 url("../images/bg-desktop.svg") no-repeat center;
+  background-size: cover;
   width: 1440px;
   height: 800px; }
+  @media (max-width: 375px) {
+    body {
+      background-color: #684BB1 url("../images/bg-mobile.svg") no-repeat center;
+      width: 375px;
+      height: 800px; } }
+
+.img {
+  width: 100%; }
 
 h1 {
+  font-family: Poppins;
   font-size: 40px;
   font-weight: 600;
   color: #FFFFFF;
-  line-height: 1.6; }
+  line-height: 60px;
+  font-style: normal; }
+  @media (max-width: 375px) {
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 36px;
+      text-align: center; } }
 
 /*we can create a mixin for h1*/
 p {
-  color: #FFFFFF;
   font-family: 'Open Sans';
   font-size: 18px;
-  font-size: normal;
   font-weight: 400;
+  color: #FFFFFF;
   line-height: 27px; }
+  @media (max-width: 375px) {
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 24px;
+      text-align: center; } }
 
 a:link {
   font-family: Poppins;
@@ -41,10 +66,10 @@ a:hover {
   display: flex;
   gap: .5rem;
   margin-left: 1208px;
-  margin-top: 183px; }
-  .main-footer p {
-    border: 1px solid black;
-    border-radius: 50%; }
+  max-width: 152px;
+  height: 40px;
+  margin-top: 183px;
+  margin-bottom: 40px; }
 
 .left-content {
   max-width: 696px;
@@ -53,6 +78,14 @@ a:hover {
   margin-right: 59px;
   margin-bottom: 107px;
   margin-left: 80px; }
+  @media (max-width: 375px) {
+    .left-content {
+      width: 296px;
+      height: 209px;
+      margin-top: 69.8px;
+      margin-left: 40px;
+      margin-right: 39px;
+      margin-bottom: 160px; } }
 
 .right-content {
   max-width: 520px;
@@ -60,26 +93,61 @@ a:hover {
   margin-top: 136px;
   margin-right: 85px;
   margin-bottom: 24px; }
-  .right-content h1 {
+  .right-content .main-heading {
     width: 487px;
     height: 120px; }
-  .right-content p {
+    @media (max-width: 375px) {
+      .right-content .main-heading {
+        width: 280px;
+        height: 72px; } }
+  .right-content .intro {
     width: 520px;
     height: 81px; }
+    @media (max-width: 375px) {
+      .right-content .intro {
+        width: 304px;
+        height: 120px; } }
+  @media (max-width: 375px) {
+    .right-content {
+      width: 304px;
+      height: 272px;
+      margin-top: 60px;
+      margin-right: 35px;
+      margin-bottom: 64px;
+      margin-left: 36px; } }
 
 .flex-container {
   width: 1275px;
   max-height: 493px;
   display: flex;
   gap: 59px; }
+  @media (max-width: 375px) {
+    .flex-container {
+      flex-direction: column;
+      gap: none;
+      width: 304px;
+      height: 541px; } }
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+  border: 1px solid gray;
+  padding: 8px;
+  border-radius: 50%; }
+  .fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover {
+    color: #E880E8;
+    border-color: #E880E8; }
 
 .main-logo {
   width: 200px;
   height: 32px;
   margin-left: 80px;
-  margin-bottom: 104px;
   margin-right: 1160px;
   margin-top: 64px; }
+  @media (max-width: 375px) {
+    .main-logo {
+      width: 120px;
+      height: 19px;
+      margin-top: 38.2px;
+      margin-left: 40px; } }
 
 .callout {
   width: 200px;
@@ -95,7 +163,7 @@ a:hover {
 
 @font-face {
   font-family: Poppins;
-  src: url("font-path/Poppins-regular-webfont.eot");
-  src: url("font-path/Poppins-regular-webfont.eot?#iefix") format("embedded-opentype"), url("font-path/Poppins-regular-webfont.woff") format("woff"), url("font-path/Poppins-regular-webfont.ttf") format("truetype"); }
+  src: url("font-path/Poppins-Regular-webfont.eot");
+  src: url("font-path/Poppins-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("font-path/Poppins-Regular-webfont.woff") format("woff"), url("font-path/Poppins-Regular-webfont.ttf") format("truetype"); }
 
 /*# sourceMappingURL=main.css.map */

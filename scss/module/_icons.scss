@@ -2,7 +2,22 @@
     width:200px;
     height:32px;
     margin-left: 80px;
-    margin-bottom: 104px;
     margin-right: 1160px;
     margin-top: 64px;
+
+    @media #{$mobile-width}{
+        width:120px;
+        height:19px;
+        margin-top:38.2px;
+        margin-left:40px;
+    }
+}
+.fa-facebook{
+    @extend %brand-icons;
+}
+.fa-twitter{
+    @extend %brand-icons;
+}
+.fa-instagram{
+    @extend %brand-icons;
 }

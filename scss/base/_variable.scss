@@ -1,7 +1,7 @@
 /*universalizing the font injector css snippet*/
 
 $font-path: '../fonts';
-$img-path: '../img';
+$img-path: '../images';
 
 /*some colors*/
 
@@ -10,3 +10,6 @@ $secondary-color: #FFFFFF;
 
 $link-bg-color: $secondary-color;
 $link-hover-color: #E880E8;
+
+/*break points..................*/
+$mobile-width : '(max-width:375px)';

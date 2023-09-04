@@ -1,7 +1,7 @@
 /*for the time being*/
 @mixin font-face($family,$file){
   @font-face{
-    font-family: Poppins;
+    font-family: $family;
     src: url('#{font-path}/#{$file}-webfont.eot');
     src: url('#{font-path}/#{$file}-webfont.eot?#iefix') format('embedded-opentype'),
          url('#{font-path}/#{$file}-webfont.woff') format('woff'),
