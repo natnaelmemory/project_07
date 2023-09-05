@@ -1,16 +1,11 @@
-.main-logo{
+.logo{
     width:200px;
     height:32px;
     margin-left: 80px;
     margin-right: 1160px;
     margin-top: 64px;
 
-    @media #{$mobile-width}{
-        width:120px;
-        height:19px;
-        margin-top:38.2px;
-        margin-left:40px;
-    }
+
 }
 .fa-facebook{
     @extend %brand-icons;

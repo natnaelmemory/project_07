@@ -11,14 +11,9 @@ body {
   background-size: cover;
   width: 1440px;
   height: 800px; }
-  @media (max-width: 375px) {
-    body {
-      background-color: #684BB1 url("../images/bg-mobile.svg") no-repeat center;
-      width: 375px;
-      height: 800px; } }
 
 .img {
-  width: 100%; }
+  max-width: 100%; }
 
 h1 {
   font-family: Poppins;
@@ -27,13 +22,6 @@ h1 {
   color: #FFFFFF;
   line-height: 60px;
   font-style: normal; }
-  @media (max-width: 375px) {
-    h1 {
-      font-size: 24px;
-      font-weight: 600;
-      color: #FFFFFF;
-      line-height: 36px;
-      text-align: center; } }
 
 /*we can create a mixin for h1*/
 p {
@@ -42,13 +30,6 @@ p {
   font-weight: 400;
   color: #FFFFFF;
   line-height: 27px; }
-  @media (max-width: 375px) {
-    p {
-      font-size: 16px;
-      font-weight: 400;
-      color: #FFFFFF;
-      line-height: 24px;
-      text-align: center; } }
 
 a:link {
   font-family: Poppins;
@@ -66,67 +47,34 @@ a:hover {
   display: flex;
   gap: .5rem;
   margin-left: 1208px;
+  margin-top: 27px;
   max-width: 152px;
-  height: 40px;
-  margin-top: 183px;
-  margin-bottom: 40px; }
+  height: 40px; }
 
-.left-content {
-  max-width: 696px;
+.illustration-img {
+  width: 696px;
   height: 493px;
   margin-top: 104px;
-  margin-right: 59px;
-  margin-bottom: 107px;
-  margin-left: 80px; }
-  @media (max-width: 375px) {
-    .left-content {
-      width: 296px;
-      height: 209px;
-      margin-top: 69.8px;
-      margin-left: 40px;
-      margin-right: 39px;
-      margin-bottom: 160px; } }
+  margin-left: 80px;
+  border: 2px solid gold; }
 
 .right-content {
   max-width: 520px;
   height: 225px;
-  margin-top: 136px;
+  margin-top: 104px;
   margin-right: 85px;
   margin-bottom: 24px; }
   .right-content .main-heading {
     width: 487px;
-    height: 120px; }
-    @media (max-width: 375px) {
-      .right-content .main-heading {
-        width: 280px;
-        height: 72px; } }
+    height: 120px;
+    margin-bottom: 24px; }
   .right-content .intro {
     width: 520px;
     height: 81px; }
-    @media (max-width: 375px) {
-      .right-content .intro {
-        width: 304px;
-        height: 120px; } }
-  @media (max-width: 375px) {
-    .right-content {
-      width: 304px;
-      height: 272px;
-      margin-top: 60px;
-      margin-right: 35px;
-      margin-bottom: 64px;
-      margin-left: 36px; } }
 
 .flex-container {
-  width: 1275px;
-  max-height: 493px;
   display: flex;
   gap: 59px; }
-  @media (max-width: 375px) {
-    .flex-container {
-      flex-direction: column;
-      gap: none;
-      width: 304px;
-      height: 541px; } }
 
 .fa-facebook, .fa-twitter, .fa-instagram {
   border: 1px solid gray;
@@ -136,18 +84,12 @@ a:hover {
     color: #E880E8;
     border-color: #E880E8; }
 
-.main-logo {
+.logo {
   width: 200px;
   height: 32px;
   margin-left: 80px;
   margin-right: 1160px;
   margin-top: 64px; }
-  @media (max-width: 375px) {
-    .main-logo {
-      width: 120px;
-      height: 19px;
-      margin-top: 38.2px;
-      margin-left: 40px; } }
 
 .callout {
   width: 200px;

@@ -1,13 +1,4 @@
 .flex-container{
-    width:1275px;
-    max-height: 493px;
     display:flex;
     gap:59px;
-
-    @media #{$mobile-width}{
-        flex-direction: column;
-        gap: none;
-        width:304px;
-        height: 541px;
-    }
 }
