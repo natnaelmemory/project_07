@@ -5,6 +5,18 @@
     margin-top: 27px;
     max-width:152px;
     height:40px;
+
+ 
+
+    @media #{$mobile-width}{
+        
+        width:104px;
+        height:28px;
+        margin-left: 136px;
+        margin-right: 135px;
+        margin-top: 64px;
+        margin-bottom: 40px;
+    }
    
     
 }

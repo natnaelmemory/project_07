@@ -4,6 +4,18 @@
     margin-left: 80px;
     margin-right: 1160px;
     margin-top: 64px;
+    padding-right:45px; /*why???*/
+
+
+    @media #{$mobile-width}{
+        width:120px;
+        height:19px;
+        margin-top: 38.2px;
+        margin-left: 40px;
+        margin-right: 215px;
+       
+        padding-right:45px; /*I'm not sure why I had to add a padding*/
+    }
 
 
 }

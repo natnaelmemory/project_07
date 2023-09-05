@@ -4,10 +4,17 @@
         width:696px;
         height:493px;
         margin-top:104px ;
-        
-       
         margin-left:80px;
-        border:2px solid gold;
+       
+
+        @media #{$mobile-width}{
+            width: 296px;
+            height:209px;
+            margin-top:69.8px;
+            margin-right: 39px;
+            margin-left: 40px;
+         
+        }
     }
 
 
@@ -25,11 +32,33 @@
         width:487px;
         height:120px;
         margin-bottom: 24px;
+
+        @media #{$mobile-width}{
+            width : 280px;
+            height : 72px;
+            margin-bottom: 16px;
+            margin-top: 0;
+            padding-left: 12px;
+            padding-right:12px;
+        }
       
     }
     .intro{
         width:520px;
         height:81px;
+
+        @media #{$mobile-width}{
+            width:304px;
+            height:120px;
+        }
         
+    }
+
+    @media #{$mobile-width}{
+        width:304px;
+        height:272px;
+        margin-top: 0;
+       margin-right: 35px;
+        margin-left: 36px;
     }
 }

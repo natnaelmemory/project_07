@@ -1,4 +1,10 @@
 .flex-container{
     display:flex;
     gap:59px;
+
+    @media #{$mobile-width}{
+        flex-direction: column;
+        gap:60px;
+        height:650.8px;
+    }
 }

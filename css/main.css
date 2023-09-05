@@ -11,6 +11,9 @@ body {
   background-size: cover;
   width: 1440px;
   height: 800px; }
+  @media (max-width: 375px) {
+    body {
+      background: #684BB1 url("../images/bg-mobile.svg") no-repeat center; } }
 
 .img {
   max-width: 100%; }
@@ -22,6 +25,13 @@ h1 {
   color: #FFFFFF;
   line-height: 60px;
   font-style: normal; }
+  @media (max-width: 375px) {
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 36px;
+      text-align: center; } }
 
 /*we can create a mixin for h1*/
 p {
@@ -30,6 +40,13 @@ p {
   font-weight: 400;
   color: #FFFFFF;
   line-height: 27px; }
+  @media (max-width: 375px) {
+    p {
+      font-size: 24px;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 24px;
+      text-align: center; } }
 
 a:link {
   font-family: Poppins;
@@ -37,6 +54,12 @@ a:link {
   text-decoration: none;
   font-size: 18px;
   line-height: 27px; }
+  @media (max-width: 375px) {
+    a:link {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px; } }
 
 a:hover {
   font-family: Poppins;
@@ -50,13 +73,27 @@ a:hover {
   margin-top: 27px;
   max-width: 152px;
   height: 40px; }
+  @media (max-width: 375px) {
+    .main-footer {
+      width: 104px;
+      height: 28px;
+      margin-left: 136px;
+      margin-right: 135px;
+      margin-top: 64px;
+      margin-bottom: 40px; } }
 
 .illustration-img {
   width: 696px;
   height: 493px;
   margin-top: 104px;
-  margin-left: 80px;
-  border: 2px solid gold; }
+  margin-left: 80px; }
+  @media (max-width: 375px) {
+    .illustration-img {
+      width: 296px;
+      height: 209px;
+      margin-top: 69.8px;
+      margin-right: 39px;
+      margin-left: 40px; } }
 
 .right-content {
   max-width: 520px;
@@ -68,13 +105,37 @@ a:hover {
     width: 487px;
     height: 120px;
     margin-bottom: 24px; }
+    @media (max-width: 375px) {
+      .right-content .main-heading {
+        width: 280px;
+        height: 72px;
+        margin-bottom: 16px;
+        margin-top: 0;
+        padding-left: 12px;
+        padding-right: 12px; } }
   .right-content .intro {
     width: 520px;
     height: 81px; }
+    @media (max-width: 375px) {
+      .right-content .intro {
+        width: 304px;
+        height: 120px; } }
+  @media (max-width: 375px) {
+    .right-content {
+      width: 304px;
+      height: 272px;
+      margin-top: 0;
+      margin-right: 35px;
+      margin-left: 36px; } }
 
 .flex-container {
   display: flex;
   gap: 59px; }
+  @media (max-width: 375px) {
+    .flex-container {
+      flex-direction: column;
+      gap: 60px;
+      height: 650.8px; } }
 
 .fa-facebook, .fa-twitter, .fa-instagram {
   border: 1px solid gray;
@@ -83,13 +144,28 @@ a:hover {
   .fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover {
     color: #E880E8;
     border-color: #E880E8; }
+  @media (max-width: 375px) {
+    .fa-facebook, .fa-twitter, .fa-instagram {
+      padding: 4px;
+      margin-left: 3px; } }
 
 .logo {
   width: 200px;
   height: 32px;
   margin-left: 80px;
   margin-right: 1160px;
-  margin-top: 64px; }
+  margin-top: 64px;
+  padding-right: 45px;
+  /*why???*/ }
+  @media (max-width: 375px) {
+    .logo {
+      width: 120px;
+      height: 19px;
+      margin-top: 38.2px;
+      margin-left: 40px;
+      margin-right: 215px;
+      padding-right: 45px;
+      /*I'm not sure why I had to add a padding*/ } }
 
 .callout {
   width: 200px;
@@ -102,6 +178,19 @@ a:hover {
   padding-bottom: 16px;
   padding-left: 64px;
   padding-right: 63px; }
+  @media (max-width: 375px) {
+    .callout {
+      width: 200px;
+      height: 40px;
+      margin-top: 24px;
+      margin-right: 52px;
+      margin-left: 52px;
+      margin-bottom: 64px;
+      text-align: center;
+      padding-top: 11.29px;
+      padding-bottom: 10.71px;
+      padding-left: 75.86px;
+      padding-right: 75.14px; } }
 
 @font-face {
   font-family: Poppins;

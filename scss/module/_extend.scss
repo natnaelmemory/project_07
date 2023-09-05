@@ -3,9 +3,15 @@
     padding:8px;
     border-radius: 50%;
     
+    
 
     &:hover{
         color: $link-hover-color;
         border-color: $link-hover-color;
+    }
+
+    @media #{$mobile-width}{
+        padding:4px;
+        margin-left: 3px;
     }
 }
