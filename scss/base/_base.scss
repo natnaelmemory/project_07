@@ -11,6 +11,8 @@ body{
  
     @media #{$mobile-width}{
         background: $primary-color url('#{$img-path}/bg-mobile.svg') no-repeat center;
+        width:375px;
+        height:800px;
     }
  
 }
